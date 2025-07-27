@@ -73,6 +73,7 @@ scenarios to strengthen the network’s robustness. Given that a shuttlecock can
     ```
     python realtime_predict.py --source 0 --tracknet_file ckpts/TrackNet_best.pt
     ```
+
 * For large video
     * Enable the ```--large_video``` flag to use an IterableDataset instead of the normal Dataset, which prevents memory errors. Note that this will decrease the inference speed.
     * Use ```--max_sample_num``` to set the number of samples for background estimation.
